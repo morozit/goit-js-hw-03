@@ -6,18 +6,17 @@ const user = {
   premium: true,
 };
 
-//Write code under this line
-
 user.mood = "happy";
 user["full time"] = true;
 user.hobby = "skydiving";
 user.premium = false;
 
-const keys = Object.keys(user);
+//Write code under this line
 
+const keys = Object.keys(user);
 // Write code under this line
-for (const userKey of keys) {
-  message += `${userKey}: ${user[userKey]}\n`;
+for (const key of keys) {
+  message = `${key} : ${user[key]}\n`;
 }
 console.log(message);
 /*

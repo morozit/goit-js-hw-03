@@ -1,15 +1,17 @@
 function getAllPropValues(array, prop) {
   "use strict";
   // Write code under this line
-  let resultArray = [];
-  for (const item of array) {
-    for (const key in item) {
-      if (key === prop) {
-        resultArray.push(item[key]);
+
+  let result = [];
+  for (const key in array) {
+    const entries = Object.entries(array[key]);
+    for (const [name, value] of entries) {
+      if (name === prop) {
+        result.push(value);
       }
     }
   }
-  return resultArray;
+  return result;
 }
 
 // Объекты и ожидаемый результат

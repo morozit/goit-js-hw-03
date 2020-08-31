@@ -1,10 +1,12 @@
 const countTotalSalary = function (employees) {
   "use strict";
   // Write code under this line
-  const sallary = Object.values(employees);
+  const values = Object.values(employees);
+
   let total = 0;
-  for (const key of sallary) {
-    total += key;
+
+  for (const value of values) {
+    total += value;
   }
   return total;
 };
@@ -15,7 +17,7 @@ const developers = {
   poly: 250,
   alfred: 450,
 };
-console.log(countTotalSalary(developers));
+//console.log(countTotalSalary(developers));
 // 1000
 
 const supports = {
@@ -23,5 +25,5 @@ const supports = {
   lux: 150,
   chelsy: 150,
 };
-console.log(countTotalSalary(supports));
+//console.log(countTotalSalary(supports));
 // 500
