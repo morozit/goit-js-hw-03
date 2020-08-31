@@ -7,6 +7,7 @@ const user = {
 };
 
 //Write code under this line
+
 user.mood = "happy";
 user["full time"] = true;
 user.hobby = "skydiving";
